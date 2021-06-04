@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="js/root.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="php" href="post.php">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  </head>
+	  <body>
+      <header class="inline" id="header">
+        <h2 class="inline">
+          Create:
+        </h2>
+        <nav class="inline">
+          <div class="inline">
+            <button id="home"><a href="login.html"> Back </a></button>
+        </div>
+        <div class="inline" >
+          <button id="home" ><a href="index.html"> All </a></button>
+      </div>
+      <div class="inline" >
+        <button id="home" ><a href="search.html"> Search </a></button>
+    </div>
+    <div class="inline" id="logged">
+    </div> 
+        </nav>
+      </header>
+          <div class="block">
+	        <label for="fname" id="label"> First Name: </label><input type="text" id="fname" name="user" class="margin-left"> <br>
+            <label for="lname" id="label"> Last Name: </label><input type="text" id="lname" name="user" class="margin-left"><br>
+            <label for="ID" id="label"> ID: </label><input type="text" id="id" name="user" class="margin-left"><br>
+            <label for="email" id="label"> Email: </label><input type="email" id="email" name="user" class="margin-left"><br>
+            <label for="dob" id="label"> DOB: </label><input type="date" id="dob" name="user" class="margin-left"><br>
+        </div>
+
+	<button type="submit" onclick="createP()" class="block" accesskey="enter">
+	Submit</button>
+
+</body>	  
+</html>

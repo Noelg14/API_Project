@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="js/root.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+	<link rel="php" href="post.php">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  </head>
+	  <body>
+      <header class="inline">
+        <h2 class="inline">
+          Login:
+        </h2>
+      </header>
+          <div class="block">
+	        <label for="User"> Username: </label><input type="text" id="user" name="user" class="margin-left">
+        </div>
+        <div class="block">
+	        <label for="pass"> Password: </label><input type="password" id="pass" name="pass" class="margin-left">
+        </div>
+
+	<button type="submit" onclick="login()" class="block">
+	Submit</button>
+
+</body>	  
+</html>
