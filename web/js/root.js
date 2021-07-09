@@ -25,7 +25,7 @@ const RAPIDAPI_REQUEST_HEADERS = {
 'Access-Control-Allow-Methods': "GET, PUT, POST, DELETE, HEAD, OPTIONS"
 };
 
-	function submit(){
+	function submit(){ //used for search all page.
 		var location=document.querySelector('input[name="q"]:checked').value;
 		var url=RAPIDAPI_API_URL+location;
 
@@ -83,7 +83,7 @@ const RAPIDAPI_REQUEST_HEADERS = {
 	}
 
 
-	function login(){
+	function login(){ //Login
 		var url=RAPIDAPI_API_URL+"login";
 
 		var p=$("pass").value;
@@ -118,14 +118,13 @@ const RAPIDAPI_REQUEST_HEADERS = {
 
 }	
 
-function search(){
+function search(){ //Search person
 
 
 	var u=$("user").value;
-	var click=0;
 	var url=RAPIDAPI_API_URL+"person/"+u;
 
-	if (u == "" ||u == undefined ){
+	if (u == "" || u == undefined ){
 		alert("invalid  name");
 		return null;
 	}
@@ -185,7 +184,7 @@ function search(){
 
 }	
 
-function createP(){
+function createP(){ //Create new person
 	url=RAPIDAPI_API_URL+"create";
 
 	var id,fname, lname,email,dob;
