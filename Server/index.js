@@ -199,7 +199,7 @@ var num=['A','B','C','D','E','F','G','H',1,2,3,4,5,6,7,8,9,0]
 var key='';
 for(var i=0;i<=18;i++){
 
-    if(i==4 || i==9 || i ==14){
+    if(i+1 % 5 == 0){ // i+1 give me the true location
     key+='-';
     }
     else{
